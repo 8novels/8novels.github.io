@@ -11,11 +11,11 @@ layout: default
 {% for repository in site.github.public_repositories %}
       <div class="card border-primary">
         <div class="card-body">
-          <h4 id="{{ repository.name }}" class="card-title h6">
+          <h4 class="card-title" id="{{ repository.name }}">
             <a href="{{ repository.html_url }}">{{ repository.name }}</a>
           </h4>
           <h6 class="card-subtitle mb-2 text-muted">{{ repository.description }}</h6>
-          <p class="card-subtitle text-muted">{{ repository.updated_at }}更新</p>
+          <p class="card-text">{{ repository.updated_at }} 更新</p>
         </div>
       </div>
 {% endfor %}

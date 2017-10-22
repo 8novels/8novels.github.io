@@ -1,2 +1,3 @@
-# 8novels.github.io
-8novels.github.io
+# 8novels
+
+GitHubでWeb小説を公開しています。

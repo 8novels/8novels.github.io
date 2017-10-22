@@ -15,7 +15,6 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@8amjp" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-  <link rel="stylesheet" href="/evangelical-mermaids/assets/main.css">
 </head>
 <body>
 <div class="jumbotron">
@@ -23,8 +22,8 @@
 </div>
 <div class="container">
   <div class="row">
-    <div class="col-sm-12 col-md-4 mb-2">
 {% for repository in site.github.public_repositories %}
+    <div class="col-sm-12 col-md-4 mb-2">
       <div class="card border-primary">
         <div class="card-body">
           <h4 class="card-title" id="{{ repository.name }}">
@@ -34,8 +33,8 @@
           <p class="card-text">{{ repository.updated_at }} 更新</p>
         </div>
       </div>
-{% endfor %}
     </div>
+{% endfor %}
   </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

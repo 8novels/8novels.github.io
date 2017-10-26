@@ -22,7 +22,7 @@
 </div>
 <div class="container">
   <div class="card-columns">
-{% for repository in site.github.public_repositories %}
+{% for repository in site.github.public_repositories | sort: 'stargazers_count' | reverse %}
 {% if repository.name != "8novels.github.io" %}
     <div class="card border-primary">
       <div class="card-body">

@@ -31,7 +31,7 @@
           <a href="/{{ repository.name }}">{{ repository.description }}</a>
         </h4>
         <h6 class="card-subtitle mb-2 text-muted">{{ repository.name }}</h6>
-        <p class="card-text">{{ repository.updated_at }} 更新</p>
+        <p class="card-text">★{{ stargazers_count }} {{ repository.updated_at | date: "%Y-%m-%d" }} 更新</p>
         <a href="{{ repository.html_url }}" class="btn btn-outline-primary btn-sm" role="button"><span>View on GitHub</span></a>
         <a href="/{{ repository.name }}" class="btn btn-outline-primary btn-sm" role="button"><span>読む</span></a>
       </div>

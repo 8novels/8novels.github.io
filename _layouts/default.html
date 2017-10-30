@@ -25,7 +25,7 @@
 {% assign sorted_repositories = site.github.public_repositories | sort: 'stargazers_count' %}
 {% for repository in sorted_repositories reversed %}
 {% if repository.name != "8novels.github.io" %}
-    <div class="card border-primary" data-description="{{ repository.description }}">
+    <div class="card col-sm-12 col-md-6 col-lg-4" data-description="{{ repository.description }}">
       <div class="card-body">
         <h4 class="card-title h6" id="{{ repository.name }}">
           <a href="/{{ repository.name }}">{{ repository.description }}</a>
@@ -48,11 +48,13 @@ $(function() {
   $('.card').each(function() {
     var description = $(this).attr('data-description');
     if (description.indexOf('連載中') != -1) {
-      $(this).attr('data-status', 'running');
+      $(this).addClass('border-primary').attr('data-status', 'running');
     } else if (description.indexOf('完結済') != -1) {
-      $(this).attr('data-status', 'completed');
+      $(this).addClass('border-success').attr('data-status', 'completed');
     } else if (description.indexOf('休載中') != -1) {
-      $(this).attr('data-status', 'pending');
+      $(this).addClass('border-secondary').attr('data-status', 'pending');
+    } else if (description.indexOf('着手前') != -1) {
+      $(this).addClass('border-secondary').attr('data-status', 'pending');
     }
     if (description.indexOf('長編') != -1) {
       $(this).attr('data-length', 'long');

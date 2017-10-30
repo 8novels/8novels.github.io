@@ -21,7 +21,7 @@
 {{ content }}
 </div>
 <div class="container">
-  <div class="card-columns">
+  <div class="row">
 {% assign sorted_repositories = site.github.public_repositories | sort: 'stargazers_count' %}
 {% for repository in sorted_repositories reversed %}
 {% if repository.name != "8novels.github.io" %}

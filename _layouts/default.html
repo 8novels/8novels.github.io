@@ -22,7 +22,7 @@
 </div>
 <div class="container">
   <h4>Pick up</h4>
-  <div class="row">
+  <div class="card-columns">
     <div class="card border-primary" id="redmine-fantasy">
       <div class="card-body">
         <h4 class="card-title h6">
@@ -66,7 +66,7 @@
 
   <h4>掌編集</h4>
 
-  <div class="row" data-status="primary">
+  <div class="card-columns" data-status="primary">
 
     <div class="card" id="contes">
       <div class="card-body">
@@ -110,7 +110,7 @@
 
   <h4>完結済</h4>
 
-  <div class="row" data-status="success">
+  <div class="card-columns" data-status="success">
 
     <div class="card" id="suberanai-redmine">
       <div class="card-body">
@@ -142,7 +142,7 @@
 
   <h4>連載中</h4>
 
-  <div class="row" data-status="primary">
+  <div class="card-columns" data-status="primary">
 
     <div class="card" id="kurumi-no-carameliser">
       <div class="card-body">
@@ -174,7 +174,7 @@
 
   <h4>休載中/着手前</h4>
 
-  <div class="row" data-status="secondary">
+  <div class="card-columns" data-status="secondary">
 
     <div class="card" id="descriptive-girl">
       <div class="card-body">
@@ -239,9 +239,9 @@ $(function() {
   $('[data-status="primary"] .card').addClass('border-primary');
   $('[data-status="primary"] .card .btn').addClass('btn-outline-primary');
   $('[data-status="success"] .card').addClass('border-success');
-  $('[data-status="success"] .card.btn').addClass('btn-outline-success');
+  $('[data-status="success"] .card .btn').addClass('btn-outline-success');
   $('[data-status="secondary"] .card').addClass('border-secondary');
-  $('[data-status="secondary"] .card.btn').addClass('btn-outline-secondary');
+  $('[data-status="secondary"] .card .btn').addClass('btn-outline-secondary');
 });
 </script>
 </body>

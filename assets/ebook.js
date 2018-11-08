@@ -1,5 +1,5 @@
 $(function(){
-  $('article').each(function() {
+  $('section').each(function() {
     $(this).html(
       $(this).html()
         /* 半角または全角の縦棒以降の文字をベーステキスト、括弧内の文字をルビテキストとします。 */
